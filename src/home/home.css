@@ -1,0 +1,183 @@
+
+main{
+    min-height: 110vh;
+    background-image: url('../img/shaun-darwood-TC6u_HnDDqs-unsplash2.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .selectbox{
+    display: block;
+    width: 50%;
+    padding: 20px;
+    height: 10vh;
+    text-align-last: center;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    font-size: 50px;
+    color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-family: 'Krona One', sans-serif;
+  }
+  
+  
+  
+  .search-box .search-bar:focus{
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  
+  .clock-box{
+    margin-top: 3vh;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .clock-box .clock{
+    color: #ffa502;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    font-size: 50px;
+    margin-bottom: 1vh;
+    letter-spacing: 5px;
+  }
+   
+  .location-box .date{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    font-size: 30px;
+    margin-bottom: 1vh;
+  }
+  
+  .metar-box, .notam-box, .notam{        
+    background-color: rgba(241, 234, 234, 0.384);
+    border-radius: 16px;
+    padding: 15px 25px;
+    color:  black;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 30px;
+  }
+  
+  .notam{
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .noinputbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10vh;
+    width: 70%;
+    margin: 10vh auto;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+  }
+  
+  .noinput, .noinputdate{
+    margin: 5vh;
+  }
+
+  @media screen and (max-width: 1400px) {
+  
+    .noinputbox, .selectbox, .clock-box {
+      width: 80%;
+      font-size: 20px;
+    }
+
+    
+    }
+  
+  @media screen and (max-width: 767px) {
+
+    main{
+      position: relative;
+      top: -20px;
+    }
+
+    .clock-box{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+      width: 50%;
+      margin: auto;
+      margin-top: 40px;
+    }
+
+    .clock-box .clock{
+      color: #ffa502;
+      font-weight: 500;
+      text-align: center;
+      text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+      font-size: 30px;
+      margin-bottom: 1vh;
+      letter-spacing: 5px;
+    }
+  
+    .noinputbox, .selectbox, .clock-box {
+      width: 90%;
+      font-size: 30px;
+    }
+
+    .clock a {
+      font-size: 10px;
+    }
+
+  .selectbox{
+    height: 12vh;
+  }
+  
+  .metar-box{
+    margin: 10px;
+    font-size: 15px;
+  }
+  
+  .notam-box, .notam{
+    margin: 0px; 
+    padding: 0;
+  }
+  
+  .notam{
+    padding: 0;
+    margin: 15px auto;
+    width: 95%;
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .noinputbox{
+    margin-top: 10px;
+  }
+  
+  }
+    

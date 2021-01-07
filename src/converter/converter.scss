@@ -1,0 +1,167 @@
+@mixin margin {    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.converter{
+    min-height: 100vh;
+    margin-top: 0;
+    padding-top: 20px;
+    background-color: white;
+    background-image: url('../img/cockpit.jpg');
+    background-position: center;
+    background-size: cover;
+    
+
+    .converter__el {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .converter__title{
+        color: white;
+        @include margin;
+        background-color: rgba(241, 234, 234, 0.37);
+        border-radius: 16px;
+        width: 300px;
+        text-align: center;
+        font-family: 'Krona One', sans-serif;
+        letter-spacing: 3px;
+    }
+
+    .converter__inputbox{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 70px;
+        background-color: rgba(241, 234, 234, 0.37);
+        border-radius: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .converter__input{
+        text-align-last: center;
+        @include margin;
+        border-radius: 20px;
+        font-family: 'Krona One', sans-serif;
+    }
+
+    .converter__text{
+        font-family: 'Krona One', sans-serif;
+        color: white;
+        @include margin;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .converter a{
+        color: white;
+    }
+
+
+}
+
+@media (max-width: 1400px) {
+.converter{
+
+    .converter__inputbox{
+        margin-bottom: 20px;
+    }
+
+
+}
+
+}
+
+@media (max-width: 1150px) {
+    .converter{
+    
+        .converter__inputbox{
+            margin-bottom: 20px;
+        }
+
+        .converter__input{
+            width: 90px;
+        }
+    
+    
+    }
+    
+    }
+
+    
+@media (max-width: 767px) {
+    .converter{
+
+        .converter__title{
+            width: 90%;
+        }
+    
+        .converter__inputbox{
+            margin-bottom: 20px;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .converter__input{
+            width: 150px;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .converter__text{
+            position: absolute;
+            left: 50vw;
+
+
+        }
+
+        .converter__text--mps{
+            top: 190px;
+        }
+
+        .converter__text--KT{
+            top: 250px;
+        }
+
+        .converter__text--kmph{
+            top: 310px;
+        }
+
+        .converter__text--hpa{
+            top: 470px;
+        }
+
+        .converter__text--mmhg{
+            top: 530px;
+        }
+
+        .converter__text--inhg{
+            top: 590px;
+        }
+    
+        .converter__text--ft{
+            top: 750px;
+        }
+
+        .converter__text--m{
+            top: 810px;
+        }
+
+        .converter__text--nm{
+            top: 870px;
+        }  
+
+        .converter__text--km{
+            top: 930px;
+        }
+    
+    }
+    
+    }
